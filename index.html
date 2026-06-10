@@ -656,44 +656,53 @@
 
     <script>
         // Dados iniciais dos produtos
-        const initialProducts = [
-            {
-                id: 1,
-                name: "Relógio Seiko SSB451 Crono Quartzo Prata 40mm",
-                brand: "seiko",
-                description: "Relógio Seiko masculino com cronógrafo, movimento quartzo, caixa em aço inox prateada e pulseira de couro. Diâmetro: 40mm.",
-                price: "R$ 2.599,00",
-                image: "https://http2.mlstatic.com/D_NQ_NP_2X_939204-MLB106293768268_022026-F-relogio-seiko-ssb451-novo-crono-quartzo-prata-40mm.webp",
-                link: "https://produto.mercadolivre.com.br/MLB-4468605767-relogio-seiko-ssb451-novo-crono-quartzo-prata-40mm-_JM"
-            },
-            {
-                id: 2,
-                name: "Relógio Citizen Tsuyosa Automático Tiffany Blue",
-                brand: "citizen",
-                description: "Relógio Citizen Tsuyosa com movimento automático, mostrador azul Tiffany com acabamento sunray e caixa em aço inox. Diâmetro: 40mm.",
-                price: "R$ 2.699,00",
-                image: "https://http2.mlstatic.com/D_NQ_NP_2X_976400-MLB106924526529_022026-F-relogio-citizen-tsuyosa-novo-automatico-tiffany-blue-sunray.webp",
-                link: "https://produto.mercadolivre.com.br/MLB-4468606891-relogio-citizen-tsuyosa-novo-automatico-tiffany-blue-sunray-_JM"
-            },
-            {
-                id: 3,
-                name: "Relógio Citizen Tsuyosa Automático Verde Sunray Dial",
-                brand: "citizen",
-                description: "Relógio Citizen Tsuyosa automático com mostrador verde sunray, caixa em aço inox e pulseira integrada. Resistência à água: 50m.",
-                price: "R$ 2.699,00",
-                image: "https://http2.mlstatic.com/D_NQ_NP_2X_914869-MLB106293772582_022026-F-relogio-citizen-tsuyosa-novo-automatico-verde-sunray-dial.webp",
-                link: "https://produto.mercadolivre.com.br/MLB-4468735345-relogio-citizen-tsuyosa-novo-automatico-verde-sunray-dial-_JM"
-            },
-            {
-                id: 4,
-                name: "Relógio Tissot PRX Quartzo Preto",
-                brand: "tissot",
-                description: "Relógio Tissot PRX Quartzo Preto 40mm com design vintage, movimento Quatzo e pulseira integrada em aço inox.",
-                price: "R$ 3.899,00",
-                image: "https://gvtimerelojoaria.github.io/home/assets/PRX.jpeg",
-                link: "https://produto.mercadolivre.com.br/MLB-6243630358-tissot-prx-quartz-40mm-preto-t1374101105100-suico-_JM"
-            }
-        ];
+		const initialProducts = [
+		    {
+		        id: 1,
+		        name: "Relógio Seiko Selection SCVE053 Open Heart Automático Preto",
+		        brand: "seiko",
+		        description: "Relógio Seiko Selection Open Heart com movimento automático, mostrador preto, caixa em aço inox e design elegante. Full set com caixa e garantia original.",
+		        price: "R$ 2.199,00",
+		        image: "https://http2.mlstatic.com/D_NQ_NP_2X_706005-MLB111929473714_062026-F.webp",
+		        link: "https://www.mercadolivre.com.br/relogio-seiko-selection-scve053-open-heart-aut-preto--novo/up/MLBU4084412356"
+		    },
+		    {
+		        id: 2,
+		        name: "Relógio Tissot PRX Quartzo Preto",
+		        brand: "tissot",
+		        description: "Relógio Tissot PRX Quartzo Preto 40mm com design vintage, movimento Quartzo e pulseira integrada em aço inox.",
+		        price: "R$ 3.899,00",
+		        image: "https://gvtimerelojoaria.github.io/home/assets/PRX.jpeg",
+		        link: "https://produto.mercadolivre.com.br/MLB-6243630358-tissot-prx-quartz-40mm-preto-t1374101105100-suico-_JM"
+		    },
+		    {
+		        id: 3,
+		        name: "Relógio Seiko SSB451 Crono Quartzo Prata 40mm",
+		        brand: "seiko",
+		        description: "Relógio Seiko masculino com cronógrafo, movimento quartzo, caixa em aço inox prateada e pulseira de couro. Diâmetro: 40mm.",
+		        price: "R$ 2.599,00",
+		        image: "https://http2.mlstatic.com/D_NQ_NP_2X_939204-MLB106293768268_022026-F-relogio-seiko-ssb451-novo-crono-quartzo-prata-40mm.webp",
+		        link: "https://produto.mercadolivre.com.br/MLB-4468605767-relogio-seiko-ssb451-novo-crono-quartzo-prata-40mm-_JM"
+		    },
+		    {
+		        id: 4,
+		        name: "Relógio Citizen Tsuyosa Automático Tiffany Blue",
+		        brand: "citizen",
+		        description: "Relógio Citizen Tsuyosa com movimento automático, mostrador azul Tiffany com acabamento sunray e caixa em aço inox.",
+		        price: "Indisponível",
+		        image: "https://http2.mlstatic.com/D_NQ_NP_2X_976400-MLB106924526529_022026-F-relogio-citizen-tsuyosa-novo-automatico-tiffany-blue-sunray.webp",
+		        link: "#"
+		    },
+		    {
+		        id: 5,
+		        name: "Relógio Citizen Tsuyosa Automático Verde Sunray Dial",
+		        brand: "citizen",
+		        description: "Relógio Citizen Tsuyosa automático com mostrador verde sunray, caixa em aço inox e pulseira integrada.",
+		        price: "Indisponível",
+		        image: "https://http2.mlstatic.com/D_NQ_NP_2X_914869-MLB106293772582_022026-F-relogio-citizen-tsuyosa-novo-automatico-verde-sunray-dial.webp",
+		        link: "#"
+		    }
+		];
 
         // Função para renderizar os produtos
         function renderProducts(products) {
